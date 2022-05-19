@@ -1,0 +1,18 @@
+import java.io.*;
+class sumofnumber
+{
+    public static void main(String args[])throws IOException
+    {
+        BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
+        System.out.println("Enter The Number");
+        int n=Integer.parseInt(br.readLine());
+        int dig,sum=0;
+        while(n>0)
+        {
+            dig=n%10;
+            sum=sum+dig;
+            n=n/10;
+        }
+        System.out.println("The Number is : "+sum);
+    }
+}

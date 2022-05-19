@@ -1,0 +1,27 @@
+import java.io.*;
+class krishnamurthy
+{
+    public static void main(String args[])throws IOException
+    {
+        BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
+        int i,d,sum=0,n,temp,fact;
+        System.out.println("Enter The Number");
+        n=Integer.parseInt(br.readLine());
+        temp=n;
+        while(n!=0)
+        {
+            d=n%10;
+            n=n/10;
+            fact=1;
+            for(i=1;i<=d;i++)
+            {
+                fact*=i;
+            }
+                sum+=fact;
+            }
+            if(sum==temp)
+                System.out.println("Krishnamurthy Number");
+            else
+                System.out.println("Not A Krishnamurthy Number");
+        }
+}

@@ -1,0 +1,17 @@
+import java.util.*;
+class optional
+{
+    public static void main(String args[])
+    {
+        Optional<String> noVal=Optional.empty();
+        Optional<String>hasVal=Optional.of("ABCDEFG");
+        if(noVal.isPresent())
+        System.out.println("This Won't Be Displayed");
+        else
+        System.out.println("noVal Has No Value");
+        if(hasVal.isPresent())
+        System.out.println("The String in hasVal is: "+hasVal.get());
+        String defStr=noVal.orElse("Default String");
+        System.out.println(defStr);
+    }
+}

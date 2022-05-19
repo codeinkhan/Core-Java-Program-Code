@@ -1,0 +1,13 @@
+import java.util.*;
+class binhexoct
+{
+    public static void main(String args[])
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.print("Enter A Number To Convert : ");
+        int n=sc.nextInt();
+        System.out.println(n+" in binary : "+Integer.toBinaryString(n));
+        System.out.println(n+"in hexadecimal : "+Integer.toHexString(n));
+        System.out.println(n+"in octal : "+Integer.toOctalString(n));
+    }
+}

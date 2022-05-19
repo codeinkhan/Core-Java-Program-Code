@@ -1,0 +1,40 @@
+import java.io.*;
+class Shell_sort
+{
+    public static void main(String args[])throws IOException
+    {
+        BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
+        System.out.println("Enter The Number");
+        int n=Integer.parseInt(br.readLine());
+        int array[]=new int[n];
+        int c,k,i,j,temp;
+        n=array.length;
+        System.out.println("Enter "+n+" Integers");
+        for(c=0;c<=n-1;c++)
+        array[c]=Integer.parseInt(br.readLine());
+        for(k=n/2;k>0;k/=2)
+        {
+            for(i=k;i<n;i++)
+            {
+                temp=array[i];
+                for(j=i;j>=k;j-=k)
+                {
+                    if(temp<array[j-k])
+                    {
+                        array[j]=array[j-k];
+                    }
+                    else
+                    {
+                        break;
+                    }
+                }
+                array[j]=temp;
+            }
+        }
+        System.out.println("After Sorting: ");
+        for(i=0;i<n;i++)
+        {
+            System.out.println(array[i]);
+        }
+    }
+}

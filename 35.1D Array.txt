@@ -1,0 +1,21 @@
+import java.util.*;
+class array1d
+{
+    public static void maijn(String args[])
+    {
+        int arr[]=new int[50];
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Elements You Want To Enter");
+        int n=sc.nextInt();
+        System.out.println("Enter "+n+" Elements To Store in Array");
+        for(int i=0;i<n;i++)
+        {
+            arr[i]=sc.nextInt();
+        }
+        System.out.println("Elements In Array : ");
+        for(int i=0;i<n;i++)
+        {
+            System.out.println(arr[i]+" ");
+        }
+    }
+}

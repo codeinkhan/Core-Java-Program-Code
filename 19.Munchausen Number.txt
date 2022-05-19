@@ -1,0 +1,23 @@
+import java.io.*;
+class munchausen
+{
+    public static void main(String args[])throws IOException
+    {
+        BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
+        System.out.println("Enter The Limit");
+        int n=Integer.parseInt(br.readLine());
+        for(int i=1;i<n;i++)
+        {
+            int sum=0;
+            for(int j=i;j>0;j/=10)
+            {
+                int digit=j%10;
+                sum+=Math.pow(digit,digit);
+            }
+            if(sum==i)
+            {
+                System.out.println(i);
+            }
+        }
+    }
+}

@@ -1,0 +1,17 @@
+import java.io.*;
+class automorphic
+{
+    public static void main(String args[])throws IOException
+    {
+        BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
+        System.out.println("Enter A Number");
+        int n=Integer.parseInt(br.readLine());
+        int sq_n=n*n;
+        String str_n=Integer.toString(n);
+        String square=Integer.toString(sq_n);
+        if(square.endsWith(str_n))
+        System.out.println("Automorphic Number");
+        else
+        System.out.println("Not A Automorphic Number");
+    }
+}

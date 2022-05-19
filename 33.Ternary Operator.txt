@@ -1,0 +1,10 @@
+class ternary
+{
+    public static void main(String args[])
+    {
+        double n= -785.5;
+        String result;
+        result=(n>0.0)?"positive":"negetive";
+        System.out.println(n+" is "+result);
+    }
+}

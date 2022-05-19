@@ -1,0 +1,10 @@
+class lenCap
+{
+    public static void main(String args[])
+    {
+        StringBuffer sb=new StringBuffer("Hello");
+        System.out.println("Bufferr = "+sb);
+        System.out.println("Length = "+sb.length());
+        System.out.println("Capacity = "+sb.capacity());
+    }
+}

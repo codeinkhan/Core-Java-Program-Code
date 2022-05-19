@@ -1,0 +1,9 @@
+class substring
+{
+    public static void main(String args[])
+    {
+        String st=new String("Welcome To CodeIn");
+        System.out.print("The extracted substring is : ");
+        System.out.println(st.substring(10));
+    }
+}

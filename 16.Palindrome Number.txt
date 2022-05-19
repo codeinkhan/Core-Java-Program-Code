@@ -1,0 +1,22 @@
+import java.io.*;
+class palindrome
+{
+    public static void main(String args[])throws IOException
+    {
+        BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
+        System.out.println("Enter The Number");
+        int n=Integer.parseInt(br.readLine());
+        int sum=0,temp,r;
+        temp=n;
+        while(n>0)
+        {
+            r=n%10;
+            sum=(sum*10)+r;
+            n=n/10;
+        }
+        if(temp==sum)
+        System.out.println("Palindrome Number");
+        else
+        System.out.println("Not A Palindrome Number");
+    }   
+}
